@@ -175,3 +175,50 @@ class TestAccountService(TestCase):
             response.status_code,
             status.HTTP_405_METHOD_NOT_ALLOWED
         )
+
+
+    def test_update_an_account(self):
+        """It should Update an existing Account"""
+        account = self._create_accounts(1)[0]
+
+        # Change some data
+        updated_data = account.serialize()
+        updated_data["name"] = "Seydou Ballo Updated"
+        updated_data["phone_number"] = "555-9999"
+
+        # Update the account
+        response = self.client.put(
+            f"{BASE_URL}/{account.id}",
+            json=updated_data,
+            content_type="application/json",
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        # Check returned data
+        data = response.get_json()
+        self.assertEqual(data["name"], "Seydou Ballo Updated")
+        self.assertEqual(data["phone_number"], "555-9999")
+
+        # Check that the update was persisted
+        response = self.client.get(f"{BASE_URL}/{account.id}")
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        data = response.get_json()
+        self.assertEqual(data["name"], "Seydou Ballo Updated")
+        self.assertEqual(data["phone_number"], "555-9999")
+
+    def test_update_account_not_found(self):
+        """It should not Update an Account that is not found"""
+        account = AccountFactory()
+
+        response = self.client.put(
+            f"{BASE_URL}/0",
+            json=account.serialize(),
+            content_type="application/json",
+        )
+
+        self.assertEqual(
+            response.status_code,
+            status.HTTP_404_NOT_FOUND
+        )
