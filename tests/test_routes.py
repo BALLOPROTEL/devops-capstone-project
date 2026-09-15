@@ -249,3 +249,34 @@ class TestAccountService(TestCase):
             response.status_code,
             status.HTTP_204_NO_CONTENT
         )
+
+
+    def test_get_account_list(self):
+        """It should Get a list of Accounts"""
+        self._create_accounts(5)
+
+        response = self.client.get(BASE_URL)
+
+        self.assertEqual(
+            response.status_code,
+            status.HTTP_200_OK
+        )
+
+        data = response.get_json()
+
+        self.assertEqual(len(data), 5)
+
+
+
+    def test_get_empty_account_list(self):
+        """It should Get an empty list of Accounts"""
+        response = self.client.get(BASE_URL)
+
+        self.assertEqual(
+            response.status_code,
+            status.HTTP_200_OK
+        )
+
+        data = response.get_json()
+
+        self.assertEqual(data, [])
