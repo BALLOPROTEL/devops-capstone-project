@@ -1,0 +1,1229 @@
+Running tests...
+nosetests -vv --with-spec --spec-color --with-coverage --cover-package=service
+nose.config: INFO: Ignoring files matching ['^\\.', '^_', '^setup\\.py$']
+nose.plugins.manager: DEBUG: Configuring plugins
+nose.plugins.cover: INFO: Coverage report will include only packages: ['service', 'service']
+nose.plugins.cover: DEBUG: Coverage begin
+nose.plugins.cover: DEBUG: Clearing previously collected coverage statistics
+nose.plugins.manager: DEBUG: Plugins enabled: [<pinocchio.spec.Spec object at 0x789f5b172a30>, <nose.plugins.capture.Capture object at 0x789f5b1d8cd0>, <nose.plugins.logcapture.LogCapture object at 0x789f5b1d8d30>, <nose.plugins.cover.Coverage object at 0x789f5b07fc10>, <nose.plugins.deprecated.Deprecated object at 0x789f5b07fd30>, <nose.plugins.skip.Skip object at 0x789f5b06b310>]
+nose.core: DEBUG: configured Config(addPaths=True, args=(), capture=False, configSection='nosetests', debug=None, debugLog=None, env={}, exclude=None, files=['setup.cfg'], firstPackageWins=False, getTestCaseNamesCompat=False, ignoreFiles=[re.compile('^\\.'), re.compile('^_'), re.compile('^setup\\.py$')], ignoreFilesDefaultStrings=['^\\.', '^_', '^setup\\.py$'], include=None, includeExe=False, logStream=<_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, loggingConfig=None, options=<Values at 0x789f5aff50d0: {'version': False, 'showPlugins': False, 'verbosity': 4, 'files': None, 'where': None, 'py3where': None, 'testMatch': '(?:^|[\\b_\\./-])[Tt]est', 'testNames': None, 'debug': None, 'debugLog': None, 'loggingConfig': None, 'ignoreFiles': [], 'exclude': [], 'include': [], 'stopOnError': False, 'addPaths': True, 'includeExe': False, 'traverseNamespace': False, 'firstPackageWins': False, 'byteCompile': True, 'decorator_file': None, 'enable_plugin_outputsave': None, 'omit_success_output': False, 'save_directory': '', 'enable_plugin_spec': True, 'spec_color': True, 'spec_doctests': None, 'spec_file': None, 'enable_plugin_stopwatch': None, 'faster_than': None, 'stopwatch_file': '.nose-stopwatch-times', 'enable_plugin_figleafsections': None, 'figleaf_file': None, 'attr': None, 'eval_attr': None, 'capture': True, 'logcapture': True, 'logcapture_format': '%(name)s: %(levelname)s: %(message)s', 'logcapture_datefmt': None, 'logcapture_filters': None, 'logcapture_clear': False, 'logcapture_level': 'NOTSET', 'enable_plugin_coverage': True, 'cover_packages': ['service', 'service'], 'cover_erase': True, 'cover_tests': None, 'cover_min_percentage': None, 'cover_inclusive': None, 'cover_html': None, 'cover_html_dir': 'cover', 'cover_branches': None, 'cover_xml': None, 'cover_xml_file': 'coverage.xml', 'debugBoth': False, 'debugFailures': False, 'debugErrors': False, 'noDeprecated': False, 'enable_plugin_doctest': None, 'doctest_tests': None, 'doctestExtension': None, 'doctest_result_var': None, 'doctestFixtures': None, 'doctestOptions': None, 'enable_plugin_isolation': None, 'detailedErrors': None, 'noSkip': False, 'enable_plugin_id': None, 'testIdFile': '.noseids', 'failed': False, 'multiprocess_workers': 0, 'multiprocess_timeout': 10, 'multiprocess_restartworker': False, 'enable_plugin_xunit': None, 'xunit_file': 'nosetests.xml', 'xunit_testsuite_name': 'nosetests', 'enable_plugin_allmodules': None, 'collect_only': None}>, parser=<optparse.OptionParser object at 0x789f5c0452b0>, parserClass=<class 'optparse.OptionParser'>, plugins=<nose.plugins.manager.DefaultPluginManager object at 0x789f5c098a90>, py3where=(), runOnInit=True, srcDirs=('lib', 'src'), stopOnError=False, stream=<_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, testMatch=re.compile('(?:^|[\\b_\\./-])[Tt]est'), testMatchPat='(?:^|[\\b_\\./-])[Tt]est', testNames=[], traverseNamespace=False, verbosity=4, where=(), worker=False, workingDir='/home/project/devops-capstone-project')
+nose.importer: DEBUG: Add path /home/project/devops-capstone-project
+nose.importer: DEBUG: insert /home/project/devops-capstone-project into sys.path
+nose.core: DEBUG: test loader is <nose.loader.TestLoader object at 0x789f5aff52b0>
+nose.core: DEBUG: defaultTest .
+nose.core: DEBUG: Test names are ['.']
+nose.core: DEBUG: createTests called with None
+nose.loader: DEBUG: load from . (None)
+nose.selector: DEBUG: Test name . resolved to file ., module None, call None
+nose.selector: DEBUG: Final resolution of test name .: file /home/project/devops-capstone-project module None call None
+nose.suite: DEBUG: Create suite for [<nose.suite.LazySuite tests=generator (132625819020688)>]
+nose.suite: DEBUG: tests [<nose.suite.LazySuite tests=generator (132625819020688)>] context None
+nose.suite: DEBUG: wrap [<nose.suite.LazySuite tests=generator (132625819020688)>]
+nose.suite: DEBUG: wrapping <nose.suite.LazySuite tests=generator (132625819020688)>
+nose.suite: DEBUG: Context suite for [<nose.suite.LazySuite tests=generator (132625819020688)>] (None) (132625819020256)
+nose.core: DEBUG: runTests called
+nose.suite: DEBUG: suite 132625819020256 (<nose.suite.ContextSuite context=None>) run called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f5ace0350>
+nose.suite: DEBUG: suite 132625819020256 setUp called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f5ace0270>
+nose.suite: DEBUG: tests in 132625819020256?
+nose.suite: DEBUG: precache is [<nose.suite.LazySuite tests=generator (132625819020688)>]
+nose.suite: DEBUG: precache is []
+nose.loader: DEBUG: load from dir /home/project/devops-capstone-project
+nose.importer: DEBUG: Add path /home/project/devops-capstone-project
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/LICENSE? False
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/Makefile? False
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/Procfile? False
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/README.md? False
+nose.selector: DEBUG: wantDirectory /home/project/devops-capstone-project/bin? False
+nose.selector: DEBUG: wantDirectory /home/project/devops-capstone-project/deploy? False
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/postgresql-ephemeral-template.json? False
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/requirements.txt? False
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/security-headers-done.txt? False
+nose.selector: DEBUG: wantDirectory /home/project/devops-capstone-project/service? True
+nose.loader: DEBUG: load from /home/project/devops-capstone-project/service (None)
+nose.selector: DEBUG: Test name /home/project/devops-capstone-project/service resolved to file /home/project/devops-capstone-project/service, module None, call None
+nose.selector: DEBUG: Final resolution of test name /home/project/devops-capstone-project/service: file /home/project/devops-capstone-project/service module service call None
+nose.importer: DEBUG: Import service from /home/project/devops-capstone-project
+nose.importer: DEBUG: Add path /home/project/devops-capstone-project
+nose.importer: DEBUG: find module part service (service) in ['/home/project/devops-capstone-project']
+nose.loader: DEBUG: Load from module <module 'service' from '/home/project/devops-capstone-project/service/__init__.py'>
+nose.selector: DEBUG: wantModule <module 'service' from '/home/project/devops-capstone-project/service/__init__.py'>? False
+nose.loader: DEBUG: Load tests from module path /home/project/devops-capstone-project/service?
+nose.loader: DEBUG: path: /home/project/devops-capstone-project/service os.path.realpath(/home/project/devops-capstone-project/service): /home/project/devops-capstone-project/service
+nose.loader: DEBUG: load from dir /home/project/devops-capstone-project/service
+nose.importer: DEBUG: Add path /home/project/devops-capstone-project/service
+nose.importer: DEBUG: Add path /home/project/devops-capstone-project
+nose.selector: DEBUG: __init__.py matches ignoreFiles pattern; skipped
+nose.selector: DEBUG: wantDirectory /home/project/devops-capstone-project/service/common? True
+nose.loader: DEBUG: load from /home/project/devops-capstone-project/service/common (None)
+nose.selector: DEBUG: Test name /home/project/devops-capstone-project/service/common resolved to file /home/project/devops-capstone-project/service/common, module None, call None
+nose.selector: DEBUG: Final resolution of test name /home/project/devops-capstone-project/service/common: file /home/project/devops-capstone-project/service/common module service.common call None
+nose.importer: DEBUG: Import service.common from /home/project/devops-capstone-project
+nose.importer: DEBUG: Add path /home/project/devops-capstone-project
+nose.importer: DEBUG: find module part service (service) in ['/home/project/devops-capstone-project']
+nose.importer: DEBUG: sys.modules has service as <module 'service' from '/home/project/devops-capstone-project/service/__init__.py'>
+nose.importer: DEBUG: module already loaded? mod: /home/project/devops-capstone-project/service new: /home/project/devops-capstone-project/service
+nose.importer: DEBUG: find module part common (service.common) in ['/home/project/devops-capstone-project/service']
+nose.importer: DEBUG: sys.modules has service.common as <module 'service.common' from '/home/project/devops-capstone-project/service/common/__init__.py'>
+nose.importer: DEBUG: module already loaded? mod: /home/project/devops-capstone-project/service/common new: /home/project/devops-capstone-project/service/common
+nose.loader: DEBUG: Load from module <module 'service.common' from '/home/project/devops-capstone-project/service/common/__init__.py'>
+nose.selector: DEBUG: wantModule <module 'service.common' from '/home/project/devops-capstone-project/service/common/__init__.py'>? False
+nose.loader: DEBUG: Load tests from module path /home/project/devops-capstone-project/service/common?
+nose.loader: DEBUG: path: /home/project/devops-capstone-project/service/common os.path.realpath(/home/project/devops-capstone-project/service/common): /home/project/devops-capstone-project/service/common
+nose.loader: DEBUG: load from dir /home/project/devops-capstone-project/service/common
+nose.importer: DEBUG: Add path /home/project/devops-capstone-project/service/common
+nose.importer: DEBUG: Add path /home/project/devops-capstone-project/service
+nose.importer: DEBUG: Add path /home/project/devops-capstone-project
+nose.selector: DEBUG: __init__.py matches ignoreFiles pattern; skipped
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/service/common/cli_commands.py? None
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/service/common/error_handlers.py? None
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/service/common/log_handlers.py? None
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/service/common/status.py? None
+nose.suite: DEBUG: Create suite for <nose.suite.ContextList object at 0x789f58935ac0>
+nose.suite: DEBUG: tests <nose.suite.ContextList object at 0x789f58935ac0> context <module 'service.common' from '/home/project/devops-capstone-project/service/common/__init__.py'>
+nose.suite: DEBUG: Context suite for <nose.suite.ContextList object at 0x789f58935ac0> (<module 'service.common' from '/home/project/devops-capstone-project/service/common/__init__.py'>) (132625781183632)
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=service.common> has context service.common
+nose.suite: DEBUG: get ancestry <module 'service.common' from '/home/project/devops-capstone-project/service/common/__init__.py'>
+nose.suite: DEBUG:  <module 'service.common' from '/home/project/devops-capstone-project/service/common/__init__.py'> ancestors ['service']
+nose: DEBUG: __import__ service
+nose: DEBUG: resolve: [], service, <module 'service' from '/home/project/devops-capstone-project/service/__init__.py'>, <module 'service' from '/home/project/devops-capstone-project/service/__init__.py'>
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=service.common> has ancestor service
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/service/config.py? None
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/service/models.py? None
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/service/routes.py? None
+nose.suite: DEBUG: Create suite for <nose.suite.ContextList object at 0x789f591ec730>
+nose.suite: DEBUG: tests <nose.suite.ContextList object at 0x789f591ec730> context <module 'service' from '/home/project/devops-capstone-project/service/__init__.py'>
+nose.suite: DEBUG: Context suite for <nose.suite.ContextList object at 0x789f591ec730> (<module 'service' from '/home/project/devops-capstone-project/service/__init__.py'>) (132625790321952)
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=service> has context service
+nose.suite: DEBUG: get ancestry <module 'service' from '/home/project/devops-capstone-project/service/__init__.py'>
+nose.suite: DEBUG: suite 132625790321952 (<nose.suite.ContextSuite context=service>) run called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f58993b30>
+nose.suite: DEBUG: suite 132625790321952 setUp called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f58993b30>
+nose.suite: DEBUG: tests in 132625790321952?
+nose.suite: DEBUG: ancestor <module 'service' from '/home/project/devops-capstone-project/service/__init__.py'> may need setup
+nose.suite: DEBUG: ancestor <module 'service' from '/home/project/devops-capstone-project/service/__init__.py'> does need setup
+nose.suite: DEBUG: <nose.suite.ContextSuite context=service> setup context <module 'service' from '/home/project/devops-capstone-project/service/__init__.py'>
+nose.suite: DEBUG: completed suite setup
+nose.suite: DEBUG: precache is [<nose.suite.ContextSuite context=service.common>]
+nose.suite: DEBUG: suite 132625781183632 (<nose.suite.ContextSuite context=service.common>) run called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f58993a50>
+nose.suite: DEBUG: suite 132625781183632 setUp called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f58993a50>
+nose.suite: DEBUG: tests in 132625781183632?
+nose.suite: DEBUG: suite 132625781183632 has no tests
+nose.suite: DEBUG: precache is []
+nose.suite: DEBUG: context teardown
+nose.suite: DEBUG: No reason to teardown (was_setup? False was_torndown? False)
+nose.suite: DEBUG: context teardown
+nose.suite: DEBUG: ancestor <module 'service' from '/home/project/devops-capstone-project/service/__init__.py'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=service> setup ancestor <module 'service' from '/home/project/devops-capstone-project/service/__init__.py'>
+nose.suite: DEBUG: <nose.suite.ContextSuite context=service> teardown context <module 'service' from '/home/project/devops-capstone-project/service/__init__.py'>
+nose.suite: DEBUG: ancestor <module 'service' from '/home/project/devops-capstone-project/service/__init__.py'> may need teardown
+nose.suite: DEBUG: ancestor <module 'service' from '/home/project/devops-capstone-project/service/__init__.py'> already torn down
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/setup.cfg? False
+nose.selector: DEBUG: wantDirectory /home/project/devops-capstone-project/tekton? False
+nose.selector: DEBUG: wantDirectory /home/project/devops-capstone-project/tests? True
+nose.loader: DEBUG: load from /home/project/devops-capstone-project/tests (None)
+nose.selector: DEBUG: Test name /home/project/devops-capstone-project/tests resolved to file /home/project/devops-capstone-project/tests, module None, call None
+nose.selector: DEBUG: Final resolution of test name /home/project/devops-capstone-project/tests: file /home/project/devops-capstone-project/tests module tests call None
+nose.importer: DEBUG: Import tests from /home/project/devops-capstone-project
+nose.importer: DEBUG: Add path /home/project/devops-capstone-project
+nose.importer: DEBUG: find module part tests (tests) in ['/home/project/devops-capstone-project']
+nose.loader: DEBUG: Load from module <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.selector: DEBUG: wantModule <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>? True
+nose.loader: DEBUG: Load tests from module path /home/project/devops-capstone-project/tests?
+nose.loader: DEBUG: path: /home/project/devops-capstone-project/tests os.path.realpath(/home/project/devops-capstone-project/tests): /home/project/devops-capstone-project/tests
+nose.loader: DEBUG: load from dir /home/project/devops-capstone-project/tests
+nose.importer: DEBUG: Add path /home/project/devops-capstone-project/tests
+nose.importer: DEBUG: Add path /home/project/devops-capstone-project
+nose.selector: DEBUG: __init__.py matches ignoreFiles pattern; skipped
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/tests/factories.py? None
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/tests/test_cli_commands.py? True
+nose.loader: DEBUG: load from /home/project/devops-capstone-project/tests/test_cli_commands.py (None)
+nose.selector: DEBUG: Test name /home/project/devops-capstone-project/tests/test_cli_commands.py resolved to file /home/project/devops-capstone-project/tests/test_cli_commands.py, module None, call None
+nose.selector: DEBUG: Final resolution of test name /home/project/devops-capstone-project/tests/test_cli_commands.py: file /home/project/devops-capstone-project/tests/test_cli_commands.py module tests.test_cli_commands call None
+nose.importer: DEBUG: Import tests.test_cli_commands from /home/project/devops-capstone-project
+nose.importer: DEBUG: Add path /home/project/devops-capstone-project
+nose.importer: DEBUG: find module part tests (tests) in ['/home/project/devops-capstone-project']
+nose.importer: DEBUG: sys.modules has tests as <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.importer: DEBUG: module already loaded? mod: /home/project/devops-capstone-project/tests new: /home/project/devops-capstone-project/tests
+nose.importer: DEBUG: find module part test_cli_commands (tests.test_cli_commands) in ['/home/project/devops-capstone-project/tests']
+nose.loader: DEBUG: Load from module <module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'>
+nose.selector: DEBUG: wantModule <module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'>? True
+nose.selector: DEBUG: wantClass <class 'click.testing.CliRunner'>? None
+nose.selector: DEBUG: wantClass <class 'unittest.mock.MagicMock'>? None
+nose.selector: DEBUG: wantClass <class 'unittest.case.TestCase'>? True
+nose.selector: DEBUG: wantClass <class 'tests.test_cli_commands.TestFlaskCLI'>? True
+nose.selector: DEBUG: wantFunction <function patch at 0x789f585fc820>? None
+nose.selector: DEBUG: wantMethod <bound method TestCase.addClassCleanup of <class 'tests.test_cli_commands.transplant_class.<locals>.C'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.addCleanup>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.addTypeEqualityFunc>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertAlmostEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertCountEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertDictContainsSubset>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertDictEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertFalse>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertGreater>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertGreaterEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertIn>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertIs>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertIsInstance>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertIsNone>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertIsNot>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertIsNotNone>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertLess>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertLessEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertListEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertLogs>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertMultiLineEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertNotAlmostEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertNotEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertNotIn>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertNotIsInstance>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertNotRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertRaises>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertRaisesRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertSequenceEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertSetEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertTrue>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertTupleEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertWarns>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertWarnsRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.countTestCases>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.debug>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.defaultTestResult>? None
+nose.selector: DEBUG: wantMethod <bound method TestCase.doClassCleanups of <class 'tests.test_cli_commands.transplant_class.<locals>.C'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.doCleanups>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.fail>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.id>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.run>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.setUp>? None
+nose.selector: DEBUG: wantMethod <bound method TestCase.setUpClass of <class 'tests.test_cli_commands.transplant_class.<locals>.C'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.shortDescription>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.skipTest>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.subTest>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.tearDown>? None
+nose.selector: DEBUG: wantMethod <bound method TestCase.tearDownClass of <class 'tests.test_cli_commands.transplant_class.<locals>.C'>>? None
+nose.suite: DEBUG: Create suite for <map object at 0x789f5858edc0>
+nose.suite: DEBUG: tests <map object at 0x789f5858edc0> context None
+nose.suite: DEBUG: wrap <map object at 0x789f5858edc0>
+nose.suite: DEBUG: Context suite for [] (None) (132625777356368)
+nose.selector: DEBUG: wantMethod <bound method TestCase.addClassCleanup of <class 'tests.test_cli_commands.TestFlaskCLI'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.addCleanup>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.addTypeEqualityFunc>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertAlmostEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertCountEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertDictContainsSubset>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertDictEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertFalse>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertGreater>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertGreaterEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertIn>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertIs>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertIsInstance>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertIsNone>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertIsNot>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertIsNotNone>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertLess>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertLessEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertListEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertLogs>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertMultiLineEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertNotAlmostEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertNotEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertNotIn>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertNotIsInstance>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertNotRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertRaises>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertRaisesRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertSequenceEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertSetEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertTrue>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertTupleEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertWarns>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.assertWarnsRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.countTestCases>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.debug>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.defaultTestResult>? None
+nose.selector: DEBUG: wantMethod <bound method TestCase.doClassCleanups of <class 'tests.test_cli_commands.TestFlaskCLI'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.doCleanups>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.fail>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.id>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.run>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.setUp>? None
+nose.selector: DEBUG: wantMethod <bound method TestCase.setUpClass of <class 'tests.test_cli_commands.TestFlaskCLI'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.shortDescription>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.skipTest>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.subTest>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.tearDown>? None
+nose.selector: DEBUG: wantMethod <bound method TestCase.tearDownClass of <class 'tests.test_cli_commands.TestFlaskCLI'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestFlaskCLI.test_db_create>? True
+nose.suite: DEBUG: Create suite for <map object at 0x789f5858eee0>
+nose.suite: DEBUG: tests <map object at 0x789f5858eee0> context None
+nose.suite: DEBUG: wrap <map object at 0x789f5858eee0>
+nose.suite: DEBUG: wrapping test_db_create (tests.test_cli_commands.TestFlaskCLI)
+nose.suite: DEBUG: Context suite for [Test(<tests.test_cli_commands.TestFlaskCLI testMethod=test_db_create>)] (<class 'tests.test_cli_commands.TestFlaskCLI'>) (132625777430832)
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=TestFlaskCLI> has context TestFlaskCLI
+nose.suite: DEBUG: get ancestry <class 'tests.test_cli_commands.TestFlaskCLI'>
+nose.suite: DEBUG:  <class 'tests.test_cli_commands.TestFlaskCLI'> ancestors ['tests', 'test_cli_commands']
+nose: DEBUG: __import__ tests.test_cli_commands
+nose: DEBUG: resolve: ['test_cli_commands'], tests.test_cli_commands, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=TestFlaskCLI> has ancestor tests.test_cli_commands
+nose.suite: DEBUG:  <class 'tests.test_cli_commands.TestFlaskCLI'> ancestors ['tests']
+nose: DEBUG: __import__ tests
+nose: DEBUG: resolve: [], tests, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=TestFlaskCLI> has ancestor tests
+nose.suite: DEBUG: Create suite for <nose.suite.ContextList object at 0x789f5858eee0>
+nose.suite: DEBUG: tests <nose.suite.ContextList object at 0x789f5858eee0> context <module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'>
+nose.suite: DEBUG: Context suite for <nose.suite.ContextList object at 0x789f5858eee0> (<module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'>) (132625781184448)
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=tests.test_cli_commands> has context tests.test_cli_commands
+nose.suite: DEBUG: get ancestry <module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'>
+nose.suite: DEBUG:  <module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'> ancestors ['tests']
+nose: DEBUG: __import__ tests
+nose: DEBUG: resolve: [], tests, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=tests.test_cli_commands> has ancestor tests
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/tests/test_models.py? True
+nose.loader: DEBUG: load from /home/project/devops-capstone-project/tests/test_models.py (None)
+nose.selector: DEBUG: Test name /home/project/devops-capstone-project/tests/test_models.py resolved to file /home/project/devops-capstone-project/tests/test_models.py, module None, call None
+nose.selector: DEBUG: Final resolution of test name /home/project/devops-capstone-project/tests/test_models.py: file /home/project/devops-capstone-project/tests/test_models.py module tests.test_models call None
+nose.importer: DEBUG: Import tests.test_models from /home/project/devops-capstone-project
+nose.importer: DEBUG: Add path /home/project/devops-capstone-project
+nose.importer: DEBUG: find module part tests (tests) in ['/home/project/devops-capstone-project']
+nose.importer: DEBUG: sys.modules has tests as <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.importer: DEBUG: module already loaded? mod: /home/project/devops-capstone-project/tests new: /home/project/devops-capstone-project/tests
+nose.importer: DEBUG: find module part test_models (tests.test_models) in ['/home/project/devops-capstone-project/tests']
+nose.loader: DEBUG: Load from module <module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'>
+nose.selector: DEBUG: wantModule <module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'>? True
+nose.selector: DEBUG: wantClass <class 'service.models.Account'>? None
+nose.selector: DEBUG: wantClass <AccountFactory for <class 'service.models.Account'>>? None
+nose.selector: DEBUG: wantClass <class 'service.models.DataValidationError'>? None
+nose.selector: DEBUG: wantClass <class 'tests.test_models.TestAccount'>? True
+nose.selector: DEBUG: wantMethod <bound method TestCase.addClassCleanup of <class 'tests.test_models.TestAccount'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.addCleanup>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.addTypeEqualityFunc>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertAlmostEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertCountEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertDictContainsSubset>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertDictEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertFalse>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertGreater>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertGreaterEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertIn>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertIs>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertIsInstance>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertIsNone>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertIsNot>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertIsNotNone>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertLess>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertLessEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertListEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertLogs>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertMultiLineEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertNotAlmostEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertNotEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertNotIn>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertNotIsInstance>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertNotRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertRaises>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertRaisesRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertSequenceEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertSetEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertTrue>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertTupleEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertWarns>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.assertWarnsRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.countTestCases>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.debug>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.defaultTestResult>? None
+nose.selector: DEBUG: wantMethod <bound method TestCase.doClassCleanups of <class 'tests.test_models.TestAccount'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.doCleanups>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.fail>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.id>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.run>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.setUp>? None
+nose.selector: DEBUG: wantMethod <bound method TestAccount.setUpClass of <class 'tests.test_models.TestAccount'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.shortDescription>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.skipTest>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.subTest>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.tearDown>? None
+nose.selector: DEBUG: wantMethod <bound method TestAccount.tearDownClass of <class 'tests.test_models.TestAccount'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.test_add_a_account>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.test_create_an_account>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.test_delete_an_account>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.test_deserialize_an_account>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.test_deserialize_with_key_error>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.test_deserialize_with_type_error>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.test_find_by_name>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.test_list_all_accounts>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.test_read_account>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.test_serialize_an_account>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccount.test_update_account>? True
+nose.suite: DEBUG: Create suite for <map object at 0x789f585b6fd0>
+nose.suite: DEBUG: tests <map object at 0x789f585b6fd0> context None
+nose.suite: DEBUG: wrap <map object at 0x789f585b6fd0>
+nose.suite: DEBUG: wrapping test_add_a_account (tests.test_models.TestAccount)
+nose.suite: DEBUG: wrapping test_create_an_account (tests.test_models.TestAccount)
+nose.suite: DEBUG: wrapping test_delete_an_account (tests.test_models.TestAccount)
+nose.suite: DEBUG: wrapping test_deserialize_an_account (tests.test_models.TestAccount)
+nose.suite: DEBUG: wrapping test_deserialize_with_key_error (tests.test_models.TestAccount)
+nose.suite: DEBUG: wrapping test_deserialize_with_type_error (tests.test_models.TestAccount)
+nose.suite: DEBUG: wrapping test_find_by_name (tests.test_models.TestAccount)
+nose.suite: DEBUG: wrapping test_list_all_accounts (tests.test_models.TestAccount)
+nose.suite: DEBUG: wrapping test_read_account (tests.test_models.TestAccount)
+nose.suite: DEBUG: wrapping test_serialize_an_account (tests.test_models.TestAccount)
+nose.suite: DEBUG: wrapping test_update_account (tests.test_models.TestAccount)
+nose.suite: DEBUG: Context suite for [Test(<tests.test_models.TestAccount testMethod=test_add_a_account>), Test(<tests.test_models.TestAccount testMethod=test_create_an_account>), Test(<tests.test_models.TestAccount testMethod=test_delete_an_account>), Test(<tests.test_models.TestAccount testMethod=test_deserialize_an_account>), Test(<tests.test_models.TestAccount testMethod=test_deserialize_with_key_error>), Test(<tests.test_models.TestAccount testMethod=test_deserialize_with_type_error>), Test(<tests.test_models.TestAccount testMethod=test_find_by_name>), Test(<tests.test_models.TestAccount testMethod=test_list_all_accounts>), Test(<tests.test_models.TestAccount testMethod=test_read_account>), Test(<tests.test_models.TestAccount testMethod=test_serialize_an_account>), Test(<tests.test_models.TestAccount testMethod=test_update_account>)] (<class 'tests.test_models.TestAccount'>) (132625813825136)
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=TestAccount> has context TestAccount
+nose.suite: DEBUG: get ancestry <class 'tests.test_models.TestAccount'>
+nose.suite: DEBUG:  <class 'tests.test_models.TestAccount'> ancestors ['tests', 'test_models']
+nose: DEBUG: __import__ tests.test_models
+nose: DEBUG: resolve: ['test_models'], tests.test_models, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=TestAccount> has ancestor tests.test_models
+nose.suite: DEBUG:  <class 'tests.test_models.TestAccount'> ancestors ['tests']
+nose: DEBUG: __import__ tests
+nose: DEBUG: resolve: [], tests, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=TestAccount> has ancestor tests
+nose.suite: DEBUG: Create suite for <nose.suite.ContextList object at 0x789f585b6fd0>
+nose.suite: DEBUG: tests <nose.suite.ContextList object at 0x789f585b6fd0> context <module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'>
+nose.suite: DEBUG: Context suite for <nose.suite.ContextList object at 0x789f585b6fd0> (<module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'>) (132625777431168)
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=tests.test_models> has context tests.test_models
+nose.suite: DEBUG: get ancestry <module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'>
+nose.suite: DEBUG:  <module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'> ancestors ['tests']
+nose: DEBUG: __import__ tests
+nose: DEBUG: resolve: [], tests, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=tests.test_models> has ancestor tests
+nose.selector: DEBUG: wantFile /home/project/devops-capstone-project/tests/test_routes.py? True
+nose.loader: DEBUG: load from /home/project/devops-capstone-project/tests/test_routes.py (None)
+nose.selector: DEBUG: Test name /home/project/devops-capstone-project/tests/test_routes.py resolved to file /home/project/devops-capstone-project/tests/test_routes.py, module None, call None
+nose.selector: DEBUG: Final resolution of test name /home/project/devops-capstone-project/tests/test_routes.py: file /home/project/devops-capstone-project/tests/test_routes.py module tests.test_routes call None
+nose.importer: DEBUG: Import tests.test_routes from /home/project/devops-capstone-project
+nose.importer: DEBUG: Add path /home/project/devops-capstone-project
+nose.importer: DEBUG: find module part tests (tests) in ['/home/project/devops-capstone-project']
+nose.importer: DEBUG: sys.modules has tests as <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.importer: DEBUG: module already loaded? mod: /home/project/devops-capstone-project/tests new: /home/project/devops-capstone-project/tests
+nose.importer: DEBUG: find module part test_routes (tests.test_routes) in ['/home/project/devops-capstone-project/tests']
+nose.loader: DEBUG: Load from module <module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'>
+nose.selector: DEBUG: wantModule <module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'>? True
+nose.selector: DEBUG: wantClass <class 'service.models.Account'>? None
+nose.selector: DEBUG: wantClass <AccountFactory for <class 'service.models.Account'>>? None
+nose.selector: DEBUG: wantClass <class 'tests.test_routes.TestAccountService'>? True
+nose.selector: DEBUG: wantClass <class 'unittest.case.TestCase'>? True
+nose.selector: DEBUG: wantFunction <function init_db at 0x789f59229940>? None
+nose.selector: DEBUG: wantMethod <bound method TestCase.addClassCleanup of <class 'tests.test_routes.TestAccountService'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.addCleanup>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.addTypeEqualityFunc>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertAlmostEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertCountEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertDictContainsSubset>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertDictEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertFalse>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertGreater>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertGreaterEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertIn>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertIs>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertIsInstance>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertIsNone>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertIsNot>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertIsNotNone>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertLess>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertLessEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertListEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertLogs>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertMultiLineEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertNotAlmostEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertNotEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertNotIn>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertNotIsInstance>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertNotRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertRaises>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertRaisesRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertSequenceEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertSetEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertTrue>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertTupleEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertWarns>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.assertWarnsRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.countTestCases>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.debug>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.defaultTestResult>? None
+nose.selector: DEBUG: wantMethod <bound method TestCase.doClassCleanups of <class 'tests.test_routes.TestAccountService'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.doCleanups>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.fail>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.id>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.run>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.setUp>? None
+nose.selector: DEBUG: wantMethod <bound method TestAccountService.setUpClass of <class 'tests.test_routes.TestAccountService'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.shortDescription>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.skipTest>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.subTest>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.tearDown>? None
+nose.selector: DEBUG: wantMethod <bound method TestAccountService.tearDownClass of <class 'tests.test_routes.TestAccountService'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.test_account_not_found>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.test_bad_request>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.test_cors_policies>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.test_create_account>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.test_delete_account_not_found>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.test_delete_an_account>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.test_get_account_list>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.test_get_empty_account_list>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.test_health>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.test_index>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.test_method_not_allowed>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.test_read_an_account>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.test_security_headers>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.test_unsupported_media_type>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.test_update_account_not_found>? True
+nose.selector: DEBUG: wantMethod <unbound method TestAccountService.test_update_an_account>? True
+nose.suite: DEBUG: Create suite for <map object at 0x789f580e02e0>
+nose.suite: DEBUG: tests <map object at 0x789f580e02e0> context None
+nose.suite: DEBUG: wrap <map object at 0x789f580e02e0>
+nose.suite: DEBUG: wrapping test_account_not_found (tests.test_routes.TestAccountService)
+nose.suite: DEBUG: wrapping test_bad_request (tests.test_routes.TestAccountService)
+nose.suite: DEBUG: wrapping test_cors_policies (tests.test_routes.TestAccountService)
+nose.suite: DEBUG: wrapping test_create_account (tests.test_routes.TestAccountService)
+nose.suite: DEBUG: wrapping test_delete_account_not_found (tests.test_routes.TestAccountService)
+nose.suite: DEBUG: wrapping test_delete_an_account (tests.test_routes.TestAccountService)
+nose.suite: DEBUG: wrapping test_get_account_list (tests.test_routes.TestAccountService)
+nose.suite: DEBUG: wrapping test_get_empty_account_list (tests.test_routes.TestAccountService)
+nose.suite: DEBUG: wrapping test_health (tests.test_routes.TestAccountService)
+nose.suite: DEBUG: wrapping test_index (tests.test_routes.TestAccountService)
+nose.suite: DEBUG: wrapping test_method_not_allowed (tests.test_routes.TestAccountService)
+nose.suite: DEBUG: wrapping test_read_an_account (tests.test_routes.TestAccountService)
+nose.suite: DEBUG: wrapping test_security_headers (tests.test_routes.TestAccountService)
+nose.suite: DEBUG: wrapping test_unsupported_media_type (tests.test_routes.TestAccountService)
+nose.suite: DEBUG: wrapping test_update_account_not_found (tests.test_routes.TestAccountService)
+nose.suite: DEBUG: wrapping test_update_an_account (tests.test_routes.TestAccountService)
+nose.suite: DEBUG: Context suite for [Test(<tests.test_routes.TestAccountService testMethod=test_account_not_found>), Test(<tests.test_routes.TestAccountService testMethod=test_bad_request>), Test(<tests.test_routes.TestAccountService testMethod=test_cors_policies>), Test(<tests.test_routes.TestAccountService testMethod=test_create_account>), Test(<tests.test_routes.TestAccountService testMethod=test_delete_account_not_found>), Test(<tests.test_routes.TestAccountService testMethod=test_delete_an_account>), Test(<tests.test_routes.TestAccountService testMethod=test_get_account_list>), Test(<tests.test_routes.TestAccountService testMethod=test_get_empty_account_list>), Test(<tests.test_routes.TestAccountService testMethod=test_health>), Test(<tests.test_routes.TestAccountService testMethod=test_index>), Test(<tests.test_routes.TestAccountService testMethod=test_method_not_allowed>), Test(<tests.test_routes.TestAccountService testMethod=test_read_an_account>), Test(<tests.test_routes.TestAccountService testMethod=test_security_headers>), Test(<tests.test_routes.TestAccountService testMethod=test_unsupported_media_type>), Test(<tests.test_routes.TestAccountService testMethod=test_update_account_not_found>), Test(<tests.test_routes.TestAccountService testMethod=test_update_an_account>)] (<class 'tests.test_routes.TestAccountService'>) (132625772446288)
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=TestAccountService> has context TestAccountService
+nose.suite: DEBUG: get ancestry <class 'tests.test_routes.TestAccountService'>
+nose.suite: DEBUG:  <class 'tests.test_routes.TestAccountService'> ancestors ['tests', 'test_routes']
+nose: DEBUG: __import__ tests.test_routes
+nose: DEBUG: resolve: ['test_routes'], tests.test_routes, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=TestAccountService> has ancestor tests.test_routes
+nose.suite: DEBUG:  <class 'tests.test_routes.TestAccountService'> ancestors ['tests']
+nose: DEBUG: __import__ tests
+nose: DEBUG: resolve: [], tests, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=TestAccountService> has ancestor tests
+nose.selector: DEBUG: wantMethod <bound method TestCase.addClassCleanup of <class 'tests.test_routes.transplant_class.<locals>.C'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.addCleanup>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.addTypeEqualityFunc>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertAlmostEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertCountEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertDictContainsSubset>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertDictEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertFalse>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertGreater>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertGreaterEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertIn>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertIs>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertIsInstance>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertIsNone>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertIsNot>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertIsNotNone>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertLess>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertLessEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertListEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertLogs>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertMultiLineEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertNotAlmostEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertNotEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertNotIn>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertNotIsInstance>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertNotRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertRaises>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertRaisesRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertSequenceEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertSetEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertTrue>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertTupleEqual>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertWarns>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.assertWarnsRegex>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.countTestCases>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.debug>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.defaultTestResult>? None
+nose.selector: DEBUG: wantMethod <bound method TestCase.doClassCleanups of <class 'tests.test_routes.transplant_class.<locals>.C'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.doCleanups>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.fail>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.deprecated_func>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.id>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.run>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.setUp>? None
+nose.selector: DEBUG: wantMethod <bound method TestCase.setUpClass of <class 'tests.test_routes.transplant_class.<locals>.C'>>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.shortDescription>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.skipTest>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.subTest>? None
+nose.selector: DEBUG: wantMethod <unbound method TestCase.tearDown>? None
+nose.selector: DEBUG: wantMethod <bound method TestCase.tearDownClass of <class 'tests.test_routes.transplant_class.<locals>.C'>>? None
+nose.suite: DEBUG: Create suite for <map object at 0x789f580e0220>
+nose.suite: DEBUG: tests <map object at 0x789f580e0220> context None
+nose.suite: DEBUG: wrap <map object at 0x789f580e0220>
+nose.suite: DEBUG: Context suite for [] (None) (132625772446192)
+nose.suite: DEBUG: Create suite for <nose.suite.ContextList object at 0x789f580e0130>
+nose.suite: DEBUG: tests <nose.suite.ContextList object at 0x789f580e0130> context <module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'>
+nose.suite: DEBUG: Context suite for <nose.suite.ContextList object at 0x789f580e0130> (<module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'>) (132625772448400)
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=tests.test_routes> has context tests.test_routes
+nose.suite: DEBUG: get ancestry <module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'>
+nose.suite: DEBUG:  <module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'> ancestors ['tests']
+nose: DEBUG: __import__ tests
+nose: DEBUG: resolve: [], tests, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>, <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=tests.test_routes> has ancestor tests
+nose.suite: DEBUG: Create suite for <nose.suite.ContextList object at 0x789f5891fa60>
+nose.suite: DEBUG: tests <nose.suite.ContextList object at 0x789f5891fa60> context <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: Context suite for <nose.suite.ContextList object at 0x789f5891fa60> (<module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>) (132625777430736)
+nose.suite: DEBUG: suite <nose.suite.ContextSuite context=tests> has context tests
+nose.suite: DEBUG: get ancestry <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: suite 132625777430736 (<nose.suite.ContextSuite context=tests>) run called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f58993dd0>
+nose.suite: DEBUG: suite 132625777430736 setUp called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f58993dd0>
+nose.suite: DEBUG: tests in 132625777430736?
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> may need setup
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> does need setup
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests> setup context <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: completed suite setup
+nose.suite: DEBUG: precache is [<nose.suite.ContextSuite context=tests.test_cli_commands>, <nose.suite.ContextSuite context=tests.test_models>, <nose.suite.ContextSuite context=tests.test_routes>]
+nose.suite: DEBUG: suite 132625781184448 (<nose.suite.ContextSuite context=tests.test_cli_commands>) run called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f5a84bf90>
+nose.suite: DEBUG: suite 132625781184448 setUp called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f5a84bf90>
+nose.suite: DEBUG: tests in 132625781184448?
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> may need setup
+nose.suite: DEBUG: ancestor <module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'> may need setup
+nose.suite: DEBUG: ancestor <module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'> does need setup
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests.test_cli_commands> setup context <module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'>
+nose.suite: DEBUG: completed suite setup
+nose.suite: DEBUG: precache is [<nose.suite.ContextSuite context=None>, <nose.suite.ContextSuite context=TestFlaskCLI>]
+nose.suite: DEBUG: suite 132625777356368 (<nose.suite.ContextSuite context=None>) run called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f5a84bf20>
+nose.suite: DEBUG: suite 132625777356368 setUp called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f5a84bf20>
+nose.suite: DEBUG: tests in 132625777356368?
+nose.suite: DEBUG: suite 132625777356368 has no tests
+nose.suite: DEBUG: precache is []
+nose.suite: DEBUG: context teardown
+nose.suite: DEBUG: No reason to teardown (was_setup? False was_torndown? False)
+nose.suite: DEBUG: suite 132625777430832 (<nose.suite.ContextSuite context=TestFlaskCLI>) run called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f5a84bf20>
+nose.suite: DEBUG: suite 132625777430832 setUp called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f5a84bf20>
+nose.suite: DEBUG: tests in 132625777430832?
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> may need setup
+nose.suite: DEBUG: ancestor <module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'> may need setup
+nose.suite: DEBUG: ancestor <class 'tests.test_cli_commands.TestFlaskCLI'> may need setup
+nose.suite: DEBUG: ancestor <class 'tests.test_cli_commands.TestFlaskCLI'> does need setup
+nose.suite: DEBUG: <nose.suite.ContextSuite context=TestFlaskCLI> setup context <class 'tests.test_cli_commands.TestFlaskCLI'>
+nose: DEBUG: call fixture <class 'tests.test_cli_commands.TestFlaskCLI'>.setUpClass
+nose.suite: DEBUG: completed suite setup
+nose.suite: DEBUG: precache is [Test(<tests.test_cli_commands.TestFlaskCLI testMethod=test_db_create>)]
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+nose.suite: DEBUG: context teardown
+nose.suite: DEBUG: ancestor <class 'tests.test_cli_commands.TestFlaskCLI'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=TestFlaskCLI> setup ancestor <class 'tests.test_cli_commands.TestFlaskCLI'>
+nose.suite: DEBUG: <nose.suite.ContextSuite context=TestFlaskCLI> teardown context <class 'tests.test_cli_commands.TestFlaskCLI'>
+nose: DEBUG: call fixture <class 'tests.test_cli_commands.TestFlaskCLI'>.tearDownClass
+nose.suite: DEBUG: ancestor <module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests.test_cli_commands> setup ancestor <module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'>
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests> setup ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: ancestor <class 'tests.test_cli_commands.TestFlaskCLI'> may need teardown
+nose.suite: DEBUG: ancestor <class 'tests.test_cli_commands.TestFlaskCLI'> already torn down
+nose.suite: DEBUG: context teardown
+nose.suite: DEBUG: ancestor <module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests.test_cli_commands> setup ancestor <module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'>
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests.test_cli_commands> teardown context <module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'>
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests> setup ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: ancestor <module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'> may need teardown
+nose.suite: DEBUG: ancestor <module 'tests.test_cli_commands' from '/home/project/devops-capstone-project/tests/test_cli_commands.py'> already torn down
+nose.suite: DEBUG: suite 132625777431168 (<nose.suite.ContextSuite context=tests.test_models>) run called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f5a84bf90>
+nose.suite: DEBUG: suite 132625777431168 setUp called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f5a84bf90>
+nose.suite: DEBUG: tests in 132625777431168?
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> may need setup
+nose.suite: DEBUG: ancestor <module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'> may need setup
+nose.suite: DEBUG: ancestor <module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'> does need setup
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests.test_models> setup context <module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'>
+nose.suite: DEBUG: completed suite setup
+nose.suite: DEBUG: precache is [<nose.suite.ContextSuite context=TestAccount>]
+nose.suite: DEBUG: suite 132625813825136 (<nose.suite.ContextSuite context=TestAccount>) run called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f5a84bf20>
+nose.suite: DEBUG: suite 132625813825136 setUp called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f5a84bf20>
+nose.suite: DEBUG: tests in 132625813825136?
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> may need setup
+nose.suite: DEBUG: ancestor <module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'> may need setup
+nose.suite: DEBUG: ancestor <class 'tests.test_models.TestAccount'> may need setup
+nose.suite: DEBUG: ancestor <class 'tests.test_models.TestAccount'> does need setup
+nose.suite: DEBUG: <nose.suite.ContextSuite context=TestAccount> setup context <class 'tests.test_models.TestAccount'>
+nose: DEBUG: call fixture <class 'tests.test_models.TestAccount'>.setUpClass
+nose.suite: DEBUG: completed suite setup
+nose.suite: DEBUG: precache is [Test(<tests.test_models.TestAccount testMethod=test_add_a_account>), Test(<tests.test_models.TestAccount testMethod=test_create_an_account>), Test(<tests.test_models.TestAccount testMethod=test_delete_an_account>), Test(<tests.test_models.TestAccount testMethod=test_deserialize_an_account>), Test(<tests.test_models.TestAccount testMethod=test_deserialize_with_key_error>), Test(<tests.test_models.TestAccount testMethod=test_deserialize_with_type_error>), Test(<tests.test_models.TestAccount testMethod=test_find_by_name>), Test(<tests.test_models.TestAccount testMethod=test_list_all_accounts>), Test(<tests.test_models.TestAccount testMethod=test_read_account>), Test(<tests.test_models.TestAccount testMethod=test_serialize_an_account>), Test(<tests.test_models.TestAccount testMethod=test_update_account>)]
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+nose.suite: DEBUG: context teardown
+nose.suite: DEBUG: ancestor <class 'tests.test_models.TestAccount'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=TestAccount> setup ancestor <class 'tests.test_models.TestAccount'>
+nose.suite: DEBUG: <nose.suite.ContextSuite context=TestAccount> teardown context <class 'tests.test_models.TestAccount'>
+nose: DEBUG: call fixture <class 'tests.test_models.TestAccount'>.tearDownClass
+nose.suite: DEBUG: ancestor <module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests.test_models> setup ancestor <module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'>
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests> setup ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: ancestor <class 'tests.test_models.TestAccount'> may need teardown
+nose.suite: DEBUG: ancestor <class 'tests.test_models.TestAccount'> already torn down
+nose.suite: DEBUG: context teardown
+nose.suite: DEBUG: ancestor <module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests.test_models> setup ancestor <module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'>
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests.test_models> teardown context <module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'>
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests> setup ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: ancestor <module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'> may need teardown
+nose.suite: DEBUG: ancestor <module 'tests.test_models' from '/home/project/devops-capstone-project/tests/test_models.py'> already torn down
+nose.suite: DEBUG: suite 132625772448400 (<nose.suite.ContextSuite context=tests.test_routes>) run called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f5c1177b0>
+nose.suite: DEBUG: suite 132625772448400 setUp called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f5c1177b0>
+nose.suite: DEBUG: tests in 132625772448400?
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> may need setup
+nose.suite: DEBUG: ancestor <module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'> may need setup
+nose.suite: DEBUG: ancestor <module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'> does need setup
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests.test_routes> setup context <module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'>
+nose.suite: DEBUG: completed suite setup
+nose.suite: DEBUG: precache is [<nose.suite.ContextSuite context=TestAccountService>, <nose.suite.ContextSuite context=None>]
+nose.suite: DEBUG: suite 132625772446288 (<nose.suite.ContextSuite context=TestAccountService>) run called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f5a84ba50>
+nose.suite: DEBUG: suite 132625772446288 setUp called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f5a84ba50>
+nose.suite: DEBUG: tests in 132625772446288?
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> may need setup
+nose.suite: DEBUG: ancestor <module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'> may need setup
+nose.suite: DEBUG: ancestor <class 'tests.test_routes.TestAccountService'> may need setup
+nose.suite: DEBUG: ancestor <class 'tests.test_routes.TestAccountService'> does need setup
+nose.suite: DEBUG: <nose.suite.ContextSuite context=TestAccountService> setup context <class 'tests.test_routes.TestAccountService'>
+nose: DEBUG: call fixture <class 'tests.test_routes.TestAccountService'>.setUpClass
+nose.suite: DEBUG: completed suite setup
+nose.suite: DEBUG: precache is [Test(<tests.test_routes.TestAccountService testMethod=test_account_not_found>), Test(<tests.test_routes.TestAccountService testMethod=test_bad_request>), Test(<tests.test_routes.TestAccountService testMethod=test_cors_policies>), Test(<tests.test_routes.TestAccountService testMethod=test_create_account>), Test(<tests.test_routes.TestAccountService testMethod=test_delete_account_not_found>), Test(<tests.test_routes.TestAccountService testMethod=test_delete_an_account>), Test(<tests.test_routes.TestAccountService testMethod=test_get_account_list>), Test(<tests.test_routes.TestAccountService testMethod=test_get_empty_account_list>), Test(<tests.test_routes.TestAccountService testMethod=test_health>), Test(<tests.test_routes.TestAccountService testMethod=test_index>), Test(<tests.test_routes.TestAccountService testMethod=test_method_not_allowed>), Test(<tests.test_routes.TestAccountService testMethod=test_read_an_account>), Test(<tests.test_routes.TestAccountService testMethod=test_security_headers>), Test(<tests.test_routes.TestAccountService testMethod=test_unsupported_media_type>), Test(<tests.test_routes.TestAccountService testMethod=test_update_account_not_found>), Test(<tests.test_routes.TestAccountService testMethod=test_update_an_account>)]
+
+Account Service Tests
+[1;32m- It should not Read an Account that is not found[1;0m
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should return CORS policies[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should return 204 when deleting a non-existing Account[1;0m
+[1;32m- It should Delete an Account[1;0m
+[1;32m- It should Get a list of Accounts[1;0m
+[1;32m- It should Get an empty list of Accounts[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should not allow an unsupported method[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return security headers[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;32m- It should not Update an Account that is not found[1;0m
+[1;32m- It should Update an existing Account[1;0m
+nose.suite: DEBUG: context teardown
+nose.suite: DEBUG: ancestor <class 'tests.test_routes.TestAccountService'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=TestAccountService> setup ancestor <class 'tests.test_routes.TestAccountService'>
+nose.suite: DEBUG: <nose.suite.ContextSuite context=TestAccountService> teardown context <class 'tests.test_routes.TestAccountService'>
+nose: DEBUG: call fixture <class 'tests.test_routes.TestAccountService'>.tearDownClass
+nose.suite: DEBUG: ancestor <module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests.test_routes> setup ancestor <module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'>
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests> setup ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: ancestor <class 'tests.test_routes.TestAccountService'> may need teardown
+nose.suite: DEBUG: ancestor <class 'tests.test_routes.TestAccountService'> already torn down
+nose.suite: DEBUG: suite 132625772446192 (<nose.suite.ContextSuite context=None>) run called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f57d61120>
+nose.suite: DEBUG: suite 132625772446192 setUp called, tests: <generator object ContextSuite._get_wrapped_tests at 0x789f57d61120>
+nose.suite: DEBUG: tests in 132625772446192?
+nose.suite: DEBUG: suite 132625772446192 has no tests
+nose.suite: DEBUG: precache is []
+nose.suite: DEBUG: context teardown
+nose.suite: DEBUG: No reason to teardown (was_setup? False was_torndown? False)
+nose.suite: DEBUG: context teardown
+nose.suite: DEBUG: ancestor <module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests.test_routes> setup ancestor <module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'>
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests.test_routes> teardown context <module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'>
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests> setup ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: ancestor <module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'> may need teardown
+nose.suite: DEBUG: ancestor <module 'tests.test_routes' from '/home/project/devops-capstone-project/tests/test_routes.py'> already torn down
+nose.suite: DEBUG: context teardown
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> may need teardown
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests> setup ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: <nose.suite.ContextSuite context=tests> teardown context <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'>
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> may need teardown
+nose.suite: DEBUG: ancestor <module 'tests' from '/home/project/devops-capstone-project/tests/__init__.py'> already torn down
+nose.suite: DEBUG: context teardown
+nose.suite: DEBUG: No reason to teardown (was_setup? False was_torndown? False)
+nose.plugins.cover: DEBUG: Coverage report
+nose.plugins.cover: DEBUG: no coverage of sys: no __file__
+nose.plugins.cover: DEBUG: no coverage of builtins: no __file__
+nose.plugins.cover: DEBUG: no coverage for _frozen_importlib: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _imp: no __file__
+nose.plugins.cover: DEBUG: no coverage of _thread: no __file__
+nose.plugins.cover: DEBUG: no coverage of _warnings: no __file__
+nose.plugins.cover: DEBUG: no coverage of _weakref: no __file__
+nose.plugins.cover: DEBUG: no coverage of _io: no __file__
+nose.plugins.cover: DEBUG: no coverage of marshal: no __file__
+nose.plugins.cover: DEBUG: no coverage of posix: no __file__
+nose.plugins.cover: DEBUG: no coverage for _frozen_importlib_external: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of time: no __file__
+nose.plugins.cover: DEBUG: no coverage of zipimport: no __file__
+nose.plugins.cover: DEBUG: no coverage of _codecs: no __file__
+nose.plugins.cover: DEBUG: no coverage for codecs: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for encodings.aliases: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for encodings: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for encodings.utf_8: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _signal: no __file__
+nose.plugins.cover: DEBUG: no coverage for encodings.latin_1: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _abc: no __file__
+nose.plugins.cover: DEBUG: no coverage for abc: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for io: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of __main__: not a python file
+nose.plugins.cover: DEBUG: no coverage of _stat: no __file__
+nose.plugins.cover: DEBUG: no coverage for stat: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for _collections_abc: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for genericpath: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for posixpath: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for os.path: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for os: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for _sitebuiltins: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _locale: no __file__
+nose.plugins.cover: DEBUG: no coverage for _bootlocale: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for _distutils_hack: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for sitecustomize: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for site: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for types: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for enum: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _sre: no __file__
+nose.plugins.cover: DEBUG: no coverage for sre_constants: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for sre_parse: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for sre_compile: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _heapq: no __file__
+nose.plugins.cover: DEBUG: no coverage for heapq: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of itertools: no __file__
+nose.plugins.cover: DEBUG: no coverage for keyword: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _operator: no __file__
+nose.plugins.cover: DEBUG: no coverage for operator: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for reprlib: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _collections: no __file__
+nose.plugins.cover: DEBUG: no coverage for collections: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _functools: no __file__
+nose.plugins.cover: DEBUG: no coverage for functools: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for copyreg: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for re: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for token: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for tokenize: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for linecache: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for traceback: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for warnings: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for _weakrefset: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for weakref: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for collections.abc: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _string: no __file__
+nose.plugins.cover: DEBUG: no coverage for string: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for threading: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of atexit: no __file__
+nose.plugins.cover: DEBUG: no coverage for logging: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for unittest.util: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for unittest.result: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for difflib: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for pprint: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for contextlib: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for unittest.case: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for unittest.suite: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for fnmatch: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for unittest.loader: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for gettext: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for argparse: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for signal: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for unittest.signals: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for unittest.runner: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for unittest.main: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for unittest: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for textwrap: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for locale: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of errno: no __file__
+nose.plugins.cover: DEBUG: no coverage for optparse: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for configparser: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _ast: no __file__
+nose.plugins.cover: DEBUG: no coverage for ast: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _opcode: not a python file
+nose.plugins.cover: DEBUG: no coverage for opcode: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for dis: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for importlib._bootstrap: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for importlib._bootstrap_external: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for importlib: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for importlib.machinery: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for inspect: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.pyversion: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.util: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.base: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.failure: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _struct: no __file__
+nose.plugins.cover: DEBUG: no coverage for struct: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for _compat_pickle: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _pickle: no __file__
+nose.plugins.cover: DEBUG: no coverage for pickle: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for __future__: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for email: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for email.errors: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of binascii: no __file__
+nose.plugins.cover: DEBUG: no coverage for email.quoprimime: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for base64: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for email.base64mime: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for quopri: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for email.encoders: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for email.charset: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for email.header: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of math: no __file__
+nose.plugins.cover: DEBUG: no coverage of _bisect: no __file__
+nose.plugins.cover: DEBUG: no coverage for bisect: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _random: no __file__
+nose.plugins.cover: DEBUG: no coverage of _sha512: no __file__
+nose.plugins.cover: DEBUG: no coverage for random: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _socket: no __file__
+nose.plugins.cover: DEBUG: no coverage of select: no __file__
+nose.plugins.cover: DEBUG: no coverage for selectors: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of array: no __file__
+nose.plugins.cover: DEBUG: no coverage for socket: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _datetime: no __file__
+nose.plugins.cover: DEBUG: no coverage for datetime: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for urllib: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for ipaddress: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for urllib.parse: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for calendar: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for email._parseaddr: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for email.utils: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for email._policybase: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for email.feedparser: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for email.parser: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of typing.io: no __file__
+nose.plugins.cover: DEBUG: no coverage of typing.re: no __file__
+nose.plugins.cover: DEBUG: no coverage for typing: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for importlib.abc: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for ntpath: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for importlib.util: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for pkgutil: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of pwd: no __file__
+nose.plugins.cover: DEBUG: no coverage of grp: no __file__
+nose.plugins.cover: DEBUG: no coverage of _posixsubprocess: no __file__
+nose.plugins.cover: DEBUG: no coverage for subprocess: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for platform: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for xml: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for xml.parsers: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of pyexpat.errors: no __file__
+nose.plugins.cover: DEBUG: no coverage of pyexpat.model: no __file__
+nose.plugins.cover: DEBUG: no coverage of pyexpat: no __file__
+nose.plugins.cover: DEBUG: no coverage of xml.parsers.expat.model: no __file__
+nose.plugins.cover: DEBUG: no coverage of xml.parsers.expat.errors: no __file__
+nose.plugins.cover: DEBUG: no coverage for xml.parsers.expat: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for plistlib: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of zlib: no __file__
+nose.plugins.cover: DEBUG: no coverage for _compression: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _bz2: not a python file
+nose.plugins.cover: DEBUG: no coverage for bz2: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _lzma: not a python file
+nose.plugins.cover: DEBUG: no coverage for lzma: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for shutil: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for tempfile: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for zipfile: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for packaging: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for copy: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for dataclasses: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for packaging.version: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for packaging._ranges: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for sysconfig: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for packaging._elffile: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for packaging._manylinux: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for packaging._musllinux: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for packaging.tags: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for packaging.utils: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for packaging.specifiers: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for packaging._tokenizer: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for packaging._parser: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for packaging.markers: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for packaging.requirements: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of jaraco: not a python file
+nose.plugins.cover: DEBUG: no coverage for pathlib: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for importlib._common: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for importlib.resources: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _queue: not a python file
+nose.plugins.cover: DEBUG: no coverage for queue: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for more_itertools.recipes: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for more_itertools.more: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for more_itertools: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for jaraco.functools: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _hashlib: not a python file
+nose.plugins.cover: DEBUG: no coverage of _blake2: no __file__
+nose.plugins.cover: DEBUG: no coverage for hashlib: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for http: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for uu: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for email._encoded_words: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for email.iterators: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for email.message: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _ssl: not a python file
+nose.plugins.cover: DEBUG: no coverage for ssl: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for http.client: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for urllib.response: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for urllib.error: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for urllib.request: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for backports: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for backports.tarfile.compat: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for backports.tarfile.compat.py38: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for backports.tarfile: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for jaraco.context: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for jaraco.text: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for platformdirs.api: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for platformdirs.version: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for platformdirs.unix: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for platformdirs: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for pkg_resources: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.manager: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for multiprocessing.process: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for multiprocessing.reduction: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for multiprocessing.context: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of __mp_main__: not a python file
+nose.plugins.cover: DEBUG: no coverage for multiprocessing: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.plugintest: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.config: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.case: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for imp: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.importer: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.selector: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.proxy: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.suite: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.loader: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.result: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.core: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.errorclass: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.skip: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.deprecated: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.exc: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.tools.nontrivial: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.tools.trivial: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.tools: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for pinocchio: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for pinocchio.decorator: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for pinocchio.output_save: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for cmd: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for bdb: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for codeop: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for code: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for glob: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for pdb: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for doctest: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for colorama.ansi: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _ctypes: not a python file
+nose.plugins.cover: DEBUG: no coverage for ctypes._endian: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for ctypes: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for colorama.win32: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for colorama.winterm: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for colorama.ansitowin32: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for colorama.initialise: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for colorama: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for pinocchio.spec: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for pinocchio.stopwatch: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for pinocchio.figleaf_sections: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.attrib: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.capture: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.logcapture: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.cover: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.debug: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.doctests: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.isolate: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.inspector: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.failuredetail: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.prof: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.testid: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.multiprocess: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for xml.sax.handler: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for xml.sax._exceptions: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for xml.sax.xmlreader: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for xml.sax: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for xml.sax.saxutils: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.xunit: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.allmodules: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.collect: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for nose.plugins.builtin: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.version: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.env: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.exceptions: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.misc: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.files: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.report: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.annotate: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.tomlconfig: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.config: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.debug: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.disposition: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.pytracer: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of coverage.tracer: not a python file
+nose.plugins.cover: DEBUG: no coverage for coverage.collector: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.context: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _sqlite3: not a python file
+nose.plugins.cover: DEBUG: no coverage for sqlite3.dbapi2: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for sqlite3: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of _json: not a python file
+nose.plugins.cover: DEBUG: no coverage for json.scanner: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for json.decoder: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for json.encoder: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for json: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.numbits: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.sqldata: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.data: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.results: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.templite: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.html: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.bytecode: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.phystokens: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.parser: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.plugin: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.python: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.inorout: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.jsonreport: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.lcovreport: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.plugin_support: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.summary: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for xml.dom.domreg: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for xml.dom: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for xml.dom.minicompat: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for xml.dom.NodeFilter: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for xml.dom.xmlbuilder: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for xml.dom.minidom: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.xmlreport: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.multiproc: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage.control: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage for coverage: loaded before coverage start
+nose.plugins.cover: DEBUG: no coverage of $coverage.debug.DebugOutputFile.the_one: no __file__
+nose.plugins.cover: DEBUG: no coverage of markupsafe._speedups: not a python file
+nose.plugins.cover: DEBUG: no coverage of unicodedata: no __file__
+nose.plugins.cover: DEBUG: no coverage for werkzeug.test: is a test
+nose.plugins.cover: DEBUG: no coverage of _decimal: not a python file
+nose.plugins.cover: DEBUG: no coverage of _uuid: not a python file
+nose.plugins.cover: DEBUG: no coverage for jinja2.tests: is a test
+nose.plugins.cover: DEBUG: no coverage of _contextvars: not a python file
+nose.plugins.cover: DEBUG: coverage for service.config
+nose.plugins.cover: DEBUG: coverage for service.common
+nose.plugins.cover: DEBUG: coverage for service.common.log_handlers
+nose.plugins.cover: DEBUG: no coverage of _csv: no __file__
+nose.plugins.cover: DEBUG: no coverage of sqlalchemy.cimmutabledict: not a python file
+nose.plugins.cover: DEBUG: no coverage of greenlet._greenlet: not a python file
+nose.plugins.cover: DEBUG: no coverage of _asyncio: not a python file
+nose.plugins.cover: DEBUG: no coverage of sqlalchemy.cprocessors: not a python file
+nose.plugins.cover: DEBUG: no coverage of sqlalchemy.cresultproxy: not a python file
+nose.plugins.cover: DEBUG: coverage for service.models
+nose.plugins.cover: DEBUG: coverage for service.common.status
+nose.plugins.cover: DEBUG: coverage for service.routes
+nose.plugins.cover: DEBUG: coverage for service.common.error_handlers
+nose.plugins.cover: DEBUG: coverage for service.common.cli_commands
+nose.plugins.cover: DEBUG: no coverage of psycopg2._psycopg: not a python file
+nose.plugins.cover: DEBUG: coverage for service
+nose.plugins.cover: DEBUG: no coverage for tests: is a test
+nose.plugins.cover: DEBUG: no coverage for click.testing: is a test
+nose.plugins.cover: DEBUG: no coverage for tests.test_cli_commands: is a test
+nose.plugins.cover: DEBUG: no coverage of _zoneinfo: not a python file
+nose.plugins.cover: DEBUG: no coverage for tests.factories: is a test
+nose.plugins.cover: DEBUG: no coverage for tests.test_models: is a test
+nose.plugins.cover: DEBUG: no coverage for tests.test_routes: is a test
+nose.plugins.cover: DEBUG: no coverage for flask.testing: is a test
+nose.plugins.cover: DEBUG: Coverage report will cover modules: [<module 'service.config' from '/home/project/devops-capstone-project/service/config.py'>, <module 'service.common' from '/home/project/devops-capstone-project/service/common/__init__.py'>, <module 'service.common.log_handlers' from '/home/project/devops-capstone-project/service/common/log_handlers.py'>, <module 'service.models' from '/home/project/devops-capstone-project/service/models.py'>, <module 'service.common.status' from '/home/project/devops-capstone-project/service/common/status.py'>, <module 'service.routes' from '/home/project/devops-capstone-project/service/routes.py'>, <module 'service.common.error_handlers' from '/home/project/devops-capstone-project/service/common/error_handlers.py'>, <module 'service.common.cli_commands' from '/home/project/devops-capstone-project/service/common/cli_commands.py'>, <module 'service' from '/home/project/devops-capstone-project/service/__init__.py'>]
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   22      3    86%   36-39
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      3    91%   76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      3    96%   32, 98, 127
+service/routes.py                     55      0   100%
+----------------------------------------------------------------
+TOTAL                                252     10    96%
+----------------------------------------------------------------------
+Ran 28 tests in 1.010s
+
+OK
+
